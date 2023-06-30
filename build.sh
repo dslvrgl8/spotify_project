@@ -1,8 +1,2 @@
-#!/usr/bin/env bash
-# exit on error
-set -o errexit
-
-pip install
-
-python3 manage.py collectstatic --no-input
+pip install -r deps.txt
 python3 manage.py migrate
